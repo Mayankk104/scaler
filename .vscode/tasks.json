@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run active current file ",
+            "command": "python3",
+            "args": ["${file}"],
+            "problemMatcher": "$armcc5"
+        }
+    ],
+    "type": "shell",
+    "presentation": {
+        "focus": true,
+        "panel": "shared",
+        "clear": true,
+        "echo": false,
+        "showReuseMessage": false
+    },
+    "options": {
+        "cwd": "${workspaceFolder}"
+    }
+}
