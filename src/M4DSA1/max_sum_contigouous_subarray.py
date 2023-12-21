@@ -1,3 +1,10 @@
+"""
+Time Complexity: O(n) | Space Complexity: O(1)
+
+Note: 
+    - kadane's algorithm
+"""
+
 class Soluton:
     def max_sum(self, arr):
         max_so_far, max_sum = 0, float('-inf')
