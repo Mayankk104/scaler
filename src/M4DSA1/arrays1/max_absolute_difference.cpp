@@ -19,10 +19,10 @@ class Solution {
             aii = max(aii, arr[m] + m); //   (A[i] + i) ⬆ maximize
             ajj = min(ajj, arr[m] + m); //   (A[j] + j) ⬇ minimize
             ai_i = max(ai_i, arr[m] - m); // (A[i] - i) ⬆ maximize
-            aj_j = min(aj_j, arr[m] - m); //   (A[i] - i) ⬇ minimize
+            aj_j = min(aj_j, arr[m] - m); // (A[i] - i) ⬇ minimize
         }
 
-        int max1 = aii - ajj; // (A[i] + i)⬆ - (A[j] + j)⬇  or -(A[i] + i)⬇ - (A[j] + j)⬆, both expression are equivalent
+        int max1 = aii - ajj; //   (A[i] + i)⬆ - (A[j] + j)⬇  or -(A[i] + i)⬇ - (A[j] + j)⬆, both expression are equivalent
         int max2 = ai_i - aj_j; // (A[i] - i)⬆ - (A[j] - j)⬇  or -(A[i] - i)⬇ + (A[j] - j)⬆, both expression are equivalent
         
         return max(max1, max2);
