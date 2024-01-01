@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "files.associations": {
         "iostream": "cpp"
     }
